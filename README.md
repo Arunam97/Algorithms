@@ -1,0 +1,1 @@
+This repository is for me to solve LeetCode questions and store their solutions here. I use Java to write my algorithms.
