@@ -1,11 +1,12 @@
-package Arrays;
 import java.util.*;
 /*
- * https://leetcode.com/problems/two-sum/
- * Given an array of integers 'nums' and an integer 'target', return indices of the two numbers such that they add up to target
+ * https://leetcode.com/problems/two-sum
+ * Given an array of integers 'nums' and an integer 'target', return indices of the two numbers such that they add up to target.
  */
-class TwoSum {
-    public int[] TwoSum(int[] nums, int target) {
+class TwoSum 
+{
+    public int[] TwoSum(int[] nums, int target) 
+    {
         HashMap<Integer, Integer> map = new HashMap<>();
         int size = nums.length;
         for(int i = 0; i < size; i++) 

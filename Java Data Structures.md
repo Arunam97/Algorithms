@@ -9,28 +9,29 @@
 | Iterating through Array (traditional for loop) | for (int i = 0; i < arrayName.length; i++) { /\* code using arrayName[i] \*/ } |
 
 # ArrayList (List)
-| Function                    | Syntax                                                |
-| --------------------------- | ----------------------------------------------------- |
-| Import                      | import java.util.ArrayList;                           |
-| Declaration                 | ArrayList<ElementType> listName = new ArrayList<>();  |
-| Add Element                 | listName.add(element);                                |
-| Add at Index                | listName.add(index, element);                         |
-| Get Element at Index        | ElementType element = listName.get(index);            |
-| Set Element at Index        | listName.set(index, newElement);                      |
-| Remove Element at Index     | listName.remove(index);                               |
-| Remove by Object            | listName.remove(element);                             |
-| Check Existence             | boolean exists = listName.contains(element);          |
-| Get Index of Element        | int index = listName.indexOf(element);                |
-| Get Last Index of Element   | int lastIndex = listName.lastIndexOf(element);        |
-| Get Size                    | int size = listName.size();                           |
-| Is Empty                    | boolean isEmpty = listName.isEmpty();                 |
-| Iterate using For-Each Loop | for (ElementType element : listName) { /\* code \*/ } |
+| Function                    | Syntax                                                 |
+|-----------------------------|--------------------------------------------------------|
+| Import                      | import java.util.ArrayList;                            |
+| Declaration                 | ArrayList\<ElementType> listName = new ArrayList\<>(); |
+| Add Element                 | listName.add(element);                                 |
+| Add at Index                | listName.add(index, element);                          |
+| Deep Copy another List      | newList = new ArrayList\<>(oldList);                   |
+| Get Element at Index        | ElementType element = listName.get(index);             |
+| Set Element at Index        | listName.set(index, newElement);                       |
+| Remove Element at Index     | listName.remove(index);                                |
+| Remove by Object            | listName.remove(element);                              |
+| Check Existence             | boolean exists = listName.contains(element);           |
+| Get Index of Element        | int index = listName.indexOf(element);                 |
+| Get Last Index of Element   | int lastIndex = listName.lastIndexOf(element);         |
+| Get Size                    | int size = listName.size();                            |
+| Is Empty                    | boolean isEmpty = listName.isEmpty();                  |
+| Iterate using For-Each Loop | for (ElementType element : listName) { /\* code \*/ }  |
 
 # HashSet (Set)
 | Function            | Syntax                                               |
-| ------------------- | ---------------------------------------------------- |
+| ------------------- |------------------------------------------------------|
 | Import              | import java.util.HashSet;                            |
-| Declaration         | HashSet<ElementType> setName = new HashSet<>();      |
+| Declaration         | HashSet\<ElementType> setName = new HashSet<>();     |
 | Add Element         | setName.add(element);                                |
 | Remove Element      | setName.remove(element);                             |
 | Check Existence     | boolean exists = setName.contains(element);          |
