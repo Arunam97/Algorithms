@@ -8,7 +8,7 @@ public class SingleNumber
     public int singleNumber(int[] nums) 
     {
         int result = 0;  // Initialize a variable to store the result
-        for (int i = 0; i < nums.length; i++) 
+        for (int i = 0 ; i < nums.length ; i++) 
         {
             result = result ^ nums[i];
             /*

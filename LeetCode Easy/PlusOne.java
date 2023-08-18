@@ -9,7 +9,7 @@ public class PlusOne
 {
     public int[] plusOne(int[] digits) 
     {
-        for(int i = digits.length - 1 ; i >= 0; i--) // Accessing the array elements backwards
+        for(int i = digits.length - 1 ; i >= 0 ; i--) // Accessing the array elements backwards
         { 
             if (digits[i] < 9) // If the last digit is not 9 then simple increase the last digit by 1 and return the array
             { 

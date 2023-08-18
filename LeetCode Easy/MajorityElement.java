@@ -1,4 +1,4 @@
-import java.util.HashMap;
+import java.util.*;
 /*
  * https://leetcode.com/problems/majority-element
  * Given an array nums of size n, return the majority element.
@@ -10,7 +10,7 @@ public class MajorityElement
     public int majorityElement(int[] nums) 
     {
         int output = 0;
-        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>(); // Map to store the number of times each element ocurrs
+        Map<Integer, Integer> map = new HashMap<Integer, Integer>(); // Map to store the number of times each element ocurrs
         for (int ele : nums)
         {
             if(map.containsKey(ele)) // If element has already been seen, increase its count by 1

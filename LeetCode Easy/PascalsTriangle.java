@@ -12,14 +12,14 @@ public class PascalsTriangle
         {
             return output;   
         }
-        ArrayList<Integer> prev = new ArrayList<Integer>();
+        List<Integer> prev = new ArrayList<Integer>();
         prev.add(1); // First row will have one element only
         output.add(prev); // Add the first row to our output
-        for (int i = 2; i <= numRows; i++) 
+        for (int i = 2 ; i <= numRows ; i++) 
         {
             ArrayList<Integer> curr = new ArrayList<Integer>(); // Initialize a new current row
             curr.add(1); // Add the first element
-            for (int j = 0; j < prev.size() - 1; j++) 
+            for (int j = 0 ; j < prev.size() - 1 ; j++) 
             {
                 curr.add(prev.get(j) + prev.get(j + 1)); // current[index] = previous[index] + previous[index + 1]
             }

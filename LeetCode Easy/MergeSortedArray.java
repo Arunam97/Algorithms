@@ -13,7 +13,7 @@ public class MergeSortedArray
         int i = m - 1; // To track the largest element of nums1
         int j = n - 1; // To track the largest element of nums2
         int k = m + n - 1; // To track where the next largest element will be placed
-        while(j >= 0) // While there are still elements left in nums2
+        while (j >= 0) // While there are still elements left in nums2
         {
             if (i >= 0 && nums1[i] > nums2[j]) // If the last element of nums1 is greater than the last element of nums2
             {

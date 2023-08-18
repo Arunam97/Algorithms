@@ -8,7 +8,7 @@ public class RemoveDuplicates
     public int removeDuplicates(int[] nums) 
     {
         int j = 1; // 'j' will track the index where a new unique number should be placed
-        for (int i = 1; i < nums.length; i++) 
+        for (int i = 1 ; i < nums.length ; i++) 
         {
             if (nums[i] != nums[i-1]) // Check if number at index 'i' is unique
             { 

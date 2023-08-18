@@ -8,7 +8,7 @@ public class MissingNumber
     {
         int len = nums.length;
         int sum = (len) * (len + 1) / 2; // n(n+1)/2 to find the sum of the array
-        for(int i = 0 ; i < len ; i++) 
+        for (int i = 0 ; i < len ; i++) 
         {
             sum = sum - nums[i]; // Kepp subtracting all elements so that only the missing number is left 
         }
