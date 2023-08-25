@@ -1,8 +1,8 @@
-import java.util.*;
 /*
- * https://leetcode.com/problems/pascals-triangle
+ * https://leetcode.com/problems/pascals-triangle/
  * Given an integer numRows, return the first numRows of Pascal's triangle.
  */
+import java.util.*;
 public class PascalsTriangle
 {
     public List<List<Integer>> generate(int numRows) 
