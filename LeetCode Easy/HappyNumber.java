@@ -1,5 +1,6 @@
 /*
  * https://leetcode.com/problems/happy-number/
+ * 
  * Write an algorithm to determine if a number n is happy.
  * A happy number is a number defined by the following process:
  * Starting with any positive integer, replace the number by the sum of the squares of its digits.
@@ -14,7 +15,8 @@ public class HappyNumber
      * One important property of a number is that when you calculate its Happy number then the outcome can either be:
      * 1.) 1 - This means the number is happy number.
      * 2.) Infinite Loop - The number does not reach 1 but starts cycling through a specific set of numbers.
-     * When calculating a happy number it cannot go infinetly up as the sum of squares of any number larger than 4 digits will reduce it down to 4 digits or less.
+     * When calculating a happy number it cannot go infinetly up 
+     * as the sum of squares of any number larger than 4 digits will reduce it down to 4 digits or less.
      */
     public boolean isHappy(int n) 
     {
@@ -30,7 +32,8 @@ public class HappyNumber
         }
         return false;
     }
-    // Function to generate the next number
+
+    // Function to generate the next number.
     public int getNext(int n)
     {
         int sum = 0;

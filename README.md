@@ -1,1 +1,2 @@
-This repository is for me to solve LeetCode questions and store their solutions here. I use Java to write my algorithms.
+# Algorithms
+I solve questions from LeetCode daily and add the problem and the solution to this repository.
