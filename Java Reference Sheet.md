@@ -77,19 +77,20 @@
 
 # HashMap (Map)
 
-| Function                  | Syntax                                                                          |
-|---------------------------|---------------------------------------------------------------------------------|
-| Import                    | `import java.util.HashMap;`                                                     |
-| Declaration               | `HashMap<KeyType, ValueType> mapName = new HashMap<>();`                        |
-| Put Key-Value Pair        | `mapName.put(key, value);`                                                      |
-| Get Value by Key          | `ValueType value = mapName.get(key);`                                           |
-| Remove Key-Value Pair     | `mapName.remove(key);`                                                          |
-| Clear All Key-Value Pairs | `mapName.clear();`                                                              |
-| Check Key Existence       | `boolean exists = mapName.containsKey(key);`                                    |
-| Check Value Existence     | `boolean exists = mapName.containsValue(value);`                                |
-| Get Size                  | `int size = mapName.size();`                                                    |
-| Is Empty                  | `boolean isEmpty = mapName.isEmpty();`                                          |
-| Iterate through Keys      | `for (KeyType key : mapName.keySet()) { /* code */ }`                           |
-| Iterate through Values    | `for (ValueType value : mapName.values()) { /* code */ }`                       |
-| Iterate through Entries   | `for (Map.Entry<KeyType, ValueType> entry : mapName.entrySet()) { /* code */ }` |
-| Replace Value             | `mapName.replace(key, newValue);`                                               |
+| Function                    | Syntax                                                                          |
+|-----------------------------|---------------------------------------------------------------------------------|
+| Import                      | `import java.util.HashMap;`                                                     |
+| Declaration                 | `HashMap<KeyType, ValueType> mapName = new HashMap<>();`                        |
+| Put Key-Value Pair          | `mapName.put(key, value);`                                                      |
+| Get Value by Key            | `ValueType value = mapName.get(key);`                                           |
+| Get Value or return default | `mapName.getOrDefault(key, defaultValue);`                                      |
+| Remove Key-Value Pair       | `mapName.remove(key);`                                                          |
+| Clear All Key-Value Pairs   | `mapName.clear();`                                                              |
+| Check Key Existence         | `boolean exists = mapName.containsKey(key);`                                    |
+| Check Value Existence       | `boolean exists = mapName.containsValue(value);`                                |
+| Get Size                    | `int size = mapName.size();`                                                    |
+| Is Empty                    | `boolean isEmpty = mapName.isEmpty();`                                          |
+| Iterate through Keys        | `for (KeyType key : mapName.keySet()) { /* code */ }`                           |
+| Iterate through Values      | `for (ValueType value : mapName.values()) { /* code */ }`                       |
+| Iterate through Entries     | `for (Map.Entry<KeyType, ValueType> entry : mapName.entrySet()) { /* code */ }` |
+| Replace Value               | `mapName.replace(key, newValue);`                                               |
