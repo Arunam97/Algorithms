@@ -30,15 +30,16 @@
 
 # Arrays
 
-| Function                                       | Syntax                                                                                                  |
-|------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Initialization                                 | `datatype[] arrayName = new datatype[size]; `                                                           |
-| Access Element                                 | `arrayName[index];    `                                                                                 |
-| Assign Element                                 | `arrayName[index] = value;    `                                                                         |
-| Array Length                                   | `arrayName.length;     `                                                                                |
+| Function                                       | Syntax                                                                                                                 |
+|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| Initialization                                 | `datatype[] arrayName = new datatype[size]; `                                                                          |
+| Access Element                                 | `arrayName[index];    `                                                                                                |
+| Assign Element                                 | `arrayName[index] = value;    `                                                                                        |
+| Array Length                                   | `arrayName.length;     `                                                                                               |
 | Array to List                                  | `List<WrapperClass> list = Arrays.asList(array);`<br/>(Array type must also be of a Wrapper class, not primitive type) |
-| Iterating through Array (for-each loop)        | `for (datatype element : arrayName) { /* code */ }`                                                     |
-| Iterating through Array (traditional for loop) | `for (int i = 0; i < arrayName.length; i++) { /* code */ }`                           |
+| Sort an Array                                  | `Arrays.sort(arrayName);`                                                                                              |
+| Iterating through Array (for-each loop)        | `for (datatype element : arrayName) { /* code */ }`                                                                    |
+| Iterating through Array (traditional for loop) | `for (int i = 0; i < arrayName.length; i++) { /* code */ }`                                                            |
 
 # ArrayList (List)
 
@@ -48,6 +49,10 @@
 | Declaration                      | `ArrayList<ElementType> listName = new ArrayList<>()` |
 | Add Element                      | `listName.add(element);`                              |
 | Add at Index                     | `listName.add(index, element);`                       |
+| Get Size                         | `int size = listName.size();`                         |
+| Clear All Elements               | `listName.clear();`                                   |
+| Add all elements of an Array     | `listName.addAll(Arrays.asList(array));`              |
+| Sort List                        | `Collections.sort(listName);`                         |
 | Add all elements of a Collection | `listName.addAll(collection);`                        |
 | Deep Copy another List           | `listName = new ArrayList<>(oldList);`                |
 | Get Element at Index             | `ElementType element = listName.get(index);`          |
@@ -57,7 +62,6 @@
 | Check Existence                  | `boolean exists = listName.contains(element);`        |
 | Get Index of Element             | `int index = listName.indexOf(element);`              |
 | Get Last Index of Element        | `int lastIndex = listName.lastIndexOf(element);`      |
-| Get Size                         | `int size = listName.size();`                         |
 | Is Empty                         | `boolean isEmpty = listName.isEmpty();`               |
 | Iterate using For-Each Loop      | `for (ElementType element : listName) { /* code */ }` |
 
