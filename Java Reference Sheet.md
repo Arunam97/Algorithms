@@ -32,6 +32,7 @@
 
 | Function                                       | Syntax                                                                                                                 |
 |------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| Import                                         | `import java.util.Arrays;`                                                                                             |
 | Initialization                                 | `datatype[] arrayName = new datatype[size]; `                                                                          |
 | Access Element                                 | `arrayName[index];    `                                                                                                |
 | Assign Element                                 | `arrayName[index] = value;    `                                                                                        |
