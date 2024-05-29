@@ -51,27 +51,28 @@
 
 # ArrayList (List)
 
-| Function                         | Syntax                                                |
-|----------------------------------|-------------------------------------------------------|
-| Import                           | `import java.util.ArrayList;`                         |
-| Declaration                      | `ArrayList<ElementType> listName = new ArrayList<>()` |
-| Add Element                      | `listName.add(element);`                              |
-| Add at Index                     | `listName.add(index, element);`                       |
-| Get Size                         | `int size = listName.size();`                         |
-| Clear All Elements               | `listName.clear();`                                   |
-| Add all elements of an Array     | `listName.addAll(Arrays.asList(array));`              |
-| Sort List                        | `Collections.sort(listName);`                         |
-| Add all elements of a Collection | `listName.addAll(collection);`                        |
-| Deep Copy another List           | `listName = new ArrayList<>(oldList);`                |
-| Get Element at Index             | `ElementType element = listName.get(index);`          |
-| Set Element at Index             | `listName.set(index, newElement);`                    |
-| Remove Element at Index          | `listName.remove(index);`                             |
-| Remove by Object                 | `listName.remove(element);`                           |
-| Check Existence                  | `boolean exists = listName.contains(element);`        |
-| Get Index of Element             | `int index = listName.indexOf(element);`              |
-| Get Last Index of Element        | `int lastIndex = listName.lastIndexOf(element);`      |
-| Is Empty                         | `boolean isEmpty = listName.isEmpty();`               |
-| Iterate using For-Each Loop      | `for (ElementType element : listName) { /* code */ }` |
+| Function                         | Syntax                                                        |
+|----------------------------------|---------------------------------------------------------------|
+| Import                           | `import java.util.ArrayList;`                                 |
+| Declaration                      | `ArrayList<ElementType> listName = new ArrayList<>()`         |
+| Add Element                      | `listName.add(element);`                                      |
+| Add at Index                     | `listName.add(index, element);`                               |
+| Get Size                         | `int size = listName.size();`                                 |
+| List to Array                    | `ElementType[] array = listName.toArray(new ElementType[0]);` |
+| Clear All Elements               | `listName.clear();`                                           |
+| Add all elements of an Array     | `listName.addAll(Arrays.asList(array));`                      |
+| Sort List                        | `Collections.sort(listName);`                                 |
+| Add all elements of a Collection | `listName.addAll(collection);`                                |
+| Deep Copy another List           | `listName = new ArrayList<>(oldList);`                        |
+| Get Element at Index             | `ElementType element = listName.get(index);`                  |
+| Set Element at Index             | `listName.set(index, newElement);`                            |
+| Remove Element at Index          | `listName.remove(index);`                                     |
+| Remove by Object                 | `listName.remove(element);`                                   |
+| Check Existence                  | `boolean exists = listName.contains(element);`                |
+| Get Index of Element             | `int index = listName.indexOf(element);`                      |
+| Get Last Index of Element        | `int lastIndex = listName.lastIndexOf(element);`              |
+| Is Empty                         | `boolean isEmpty = listName.isEmpty();`                       |
+| Iterate using For-Each Loop      | `for (ElementType element : listName) { /* code */ }`         |
 
 # HashSet (Set)
 
