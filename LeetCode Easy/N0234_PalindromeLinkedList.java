@@ -3,11 +3,12 @@
  * 
  * Given the head of a singly linked list, return true if it is a palindrome or false otherwise.
  */
+
 import java.util.*;
 public class N0234_PalindromeLinkedList
 {
     // Class ListNode given as part of the question.
-    public class ListNode {
+    public static class ListNode {
         int val;
         ListNode next;
         ListNode() {}

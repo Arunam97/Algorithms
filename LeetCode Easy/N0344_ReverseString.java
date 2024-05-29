@@ -3,17 +3,22 @@
  * 
  * Write a function that reverses a string. The input string is given as an array of characters s.
  * You must do this by modifying the input array in-place with O(1) extra memory.
+ *
+ * Solution: Two Pointer.
  */
+
 public class N0344_ReverseString
 {
     public void reverseString(char[] s) 
     {
-        int len = s.length;
-        for (int i = 0 ; i < len / 2; i++)
-        {
-            char temp = s[i];
-            s[i] = s[len - 1 - i];
-            s[len - 1 - i] = temp;
+        int head = 0;
+        int tail = s.length - 1;
+        while(head < tail) {
+            char temp = s[head];
+            s[head] = s[tail];
+            s[tail] = temp;
+            head++;
+            tail--;
         }
     }    
 }

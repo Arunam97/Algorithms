@@ -8,6 +8,7 @@
  * Those numbers for which this process ends in 1 are happy.
  * Return true if n is a happy number, and false if not.
  */
+
 import java.util.*;
 public class N0202_HappyNumber
 {

@@ -4,42 +4,39 @@
  * Given two strings needle and haystack, 
  * return the index of the first occurrence of needle in haystack, 
  * or -1 if needle is not part of haystack.
+ *
+ * Solution: Tow Pointer.
  */
+
 public class N0028_FirstOccurrenceInAString
 {
-    // This problem is solved using a Window Sliding implementation.
-    // It may look very similar to a nested for loop approach but this approach optimizes for time and space.
-    public int strStr(String haystack, String needle) 
-    {
-        int haystackPointer = 0;
-        int needlePointerLeft = 0;
-        int needlePointerRight = 0;
-        // We don't need to check the haystack if we get to the point where there a fewer letters remaining than the entire length of needle.
-        while (haystackPointer <= haystack.length() - needle.length())
-        {
-            while (needle.charAt(needlePointerRight - needlePointerLeft) == haystack.charAt(haystackPointer))
-            {
-                // Return the left index of the window 
-                // if the window is just as big as the needle.
-                if (needlePointerRight - needlePointerLeft + 1 == needle.length())
-                {
-                    return needlePointerLeft;
-                }
-                // Keep increasing the size of the window as the letters are equal.
-                else
-                {
-                    needlePointerRight = needlePointerRight + 1;
-                    haystackPointer = haystackPointer + 1;                    
+    public int strStr(String haystack, String needle) {
+        // If needle is empty, return 0.
+        if(needle.length() == 0) {
+            return 0;
+        }
+        // If haystack is empty, return -1.
+        if(haystack.length() == 0) {
+            return -1;
+        }
+        // Loop through the haystack.
+        for (int i = 0 ; i < haystack.length() - needle.length() + 1; i++) {
+            int needlePointer = 0;
+            int storeI = i;
+            // Use a while loop to check if the needle is present in the haystack.
+            while(haystack.charAt(i) == (needle.charAt(needlePointer))) {
+                i++;
+                needlePointer++;
+                // If needlePointer reaches the length of the needle, then return the index where the needle was found.
+                if(needlePointer == needle.length()) {
+                    return storeI;
                 }
             }
-            // If at any point we get into the innermost while loop 
-            // and get to this point of the code then that means that 
-            // a substring was potentially being considered but was not a complete match. 
-            // Therefore, we reset the window and start checking from the next element.
-            needlePointerLeft = needlePointerLeft + 1;
-            needlePointerRight = needlePointerLeft;
-            haystackPointer = needlePointerLeft;
+            // If needle was not found, reset the i to the stored index and needlePointer to 0.
+            i = storeI;
+            needlePointer = 0;
         }
+        // If needle was not found, return -1.
         return -1;
     }
 }

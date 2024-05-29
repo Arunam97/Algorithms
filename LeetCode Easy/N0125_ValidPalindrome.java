@@ -2,14 +2,17 @@
  * https://leetcode.com/problems/valid-palindrome/
  * 
  * Given a string s, return true if it is a palindrome, or false otherwise.
+ *
+ * Solution: Two Pointer.
  */
+
 public class N0125_ValidPalindrome
 {
     public boolean isPalindrome(String s) 
     {
         for (int left = 0 , right = s.length() - 1 ; left < right ; left++ , right--)
         {
-            while (left < right && !Character.isLetterOrDigit(s.charAt(left))) // Move left index up if its not a number or letter.
+            while (left < right && !Character.isLetterOrDigit(s.charAt(left))) // Move left index up if it is not a number or letter.
             {
                 left = left + 1;
             }
