@@ -58,7 +58,6 @@
 | Add Element                      | `listName.add(element);`                                      |
 | Add at Index                     | `listName.add(index, element);`                               |
 | Get Size                         | `int size = listName.size();`                                 |
-| List to Array                    | `ElementType[] array = listName.toArray(new ElementType[0]);` |
 | Clear All Elements               | `listName.clear();`                                           |
 | Add all elements of an Array     | `listName.addAll(Arrays.asList(array));`                      |
 | Sort List                        | `Collections.sort(listName);`                                 |
@@ -67,7 +66,6 @@
 | Get Element at Index             | `ElementType element = listName.get(index);`                  |
 | Set Element at Index             | `listName.set(index, newElement);`                            |
 | Remove Element at Index          | `listName.remove(index);`                                     |
-| Remove by Object                 | `listName.remove(element);`                                   |
 | Check Existence                  | `boolean exists = listName.contains(element);`                |
 | Get Index of Element             | `int index = listName.indexOf(element);`                      |
 | Get Last Index of Element        | `int lastIndex = listName.lastIndexOf(element);`              |
@@ -90,20 +88,20 @@
 
 # HashMap (Map)
 
-| Function                    | Syntax                                                                          |
-|-----------------------------|---------------------------------------------------------------------------------|
-| Import                      | `import java.util.HashMap;`                                                     |
-| Declaration                 | `HashMap<KeyType, ValueType> mapName = new HashMap<>();`                        |
-| Put Key-Value Pair          | `mapName.put(key, value);`                                                      |
-| Get Value by Key            | `ValueType value = mapName.get(key);`                                           |
-| Get Size                    | `int size = mapName.size();`                                                    |
-| Get Value or return default | `mapName.getOrDefault(key, defaultValue);`                                      |
-| Remove Key-Value Pair       | `mapName.remove(key);`                                                          |
-| Clear All Key-Value Pairs   | `mapName.clear();`                                                              |
-| Check Key Existence         | `boolean exists = mapName.containsKey(key);`                                    |
-| Check Value Existence       | `boolean exists = mapName.containsValue(value);`                                |
-| Is Empty                    | `boolean isEmpty = mapName.isEmpty();`                                          |
-| Iterate through Keys        | `for (KeyType key : mapName.keySet()) { /* code */ }`                           |
-| Iterate through Values      | `for (ValueType value : mapName.values()) { /* code */ }`                       |
-| Iterate through Entries     | `for (Map.Entry<KeyType, ValueType> entry : mapName.entrySet()) { /* code */ }` |
-| Replace Value               | `mapName.replace(key, newValue);`                                               |
+| Function                    | Syntax                                                                                                                                                              |
+|-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Import                      | `import java.util.HashMap;`                                                                                                                                         |
+| Declaration                 | `HashMap<KeyType, ValueType> mapName = new HashMap<>();`                                                                                                            |
+| Put Key-Value Pair          | `mapName.put(key, value);`                                                                                                                                          |
+| Get Value by Key            | `ValueType value = mapName.get(key);`                                                                                                                               |
+| Get Size                    | `int size = mapName.size();`                                                                                                                                        |
+| Get Value or return default | `mapName.getOrDefault(key, defaultValue);`                                                                                                                          |
+| Remove Key-Value Pair       | `mapName.remove(key);`                                                                                                                                              |
+| Clear All Key-Value Pairs   | `mapName.clear();`                                                                                                                                                  |
+| Check Key Existence         | `boolean exists = mapName.containsKey(key);`                                                                                                                        |
+| Check Value Existence       | `boolean exists = mapName.containsValue(value);`                                                                                                                    |
+| Is Empty                    | `boolean isEmpty = mapName.isEmpty();`                                                                                                                              |
+| Iterate through Keys        | `for (KeyType key : mapName.keySet()) { /* code */ }`                                                                                                               |
+| Iterate through Values      | `for (ValueType value : mapName.values()) { /* code */ }`                                                                                                           |
+| Iterate through Entries     | `for (Map.Entry<KeyType, ValueType> entry : mapName.entrySet()) {` <br/> `System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue()); `<br/> `}` |
+| Replace Value               | `mapName.replace(key, newValue);`                                                                                                                                   |

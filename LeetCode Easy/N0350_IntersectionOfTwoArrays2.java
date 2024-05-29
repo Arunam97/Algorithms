@@ -2,7 +2,10 @@
  * https://leetcode.com/problems/intersection-of-two-arrays-ii/
  * 
  * Given two integer arrays nums1 and nums2, return an array of their intersection. 
- * Each element in the result must appear as many times as it shows in both arrays and you may return the result in any order.
+ * Each element in the result must appear as many times as it shows in both arrays.
+ * You may return the result in any order.
+ *
+ * Solution: HashMap, but we can also use two pointers; sort the arrays and then compare the elements.
  */
 
 import java.util.*;
