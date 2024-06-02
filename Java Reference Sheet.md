@@ -92,17 +92,20 @@
 
 # HashSet (Set)
 
-| Description                      | Syntax                                               |
-|----------------------------------|------------------------------------------------------|
-| Import                           | `import java.util.HashSet;`                          |
-| Declaration                      | `HashSet<ElementType> setName = new HashSet<>();`    |
-| Add Element                      | `setName.add(element);`                              |
-| Get Size                         | `int size = setName.size();`                         |
-| Add all elements of a Collection | `setName.addAll(collection);`                        |
-| Remove Element                   | `setName.remove(element);`                           |
-| Check Existence                  | `boolean exists = setName.contains(element);`        |
-| Clear All Elements               | `setName.clear();`                                   |
-| Iterate through Set              | `for (ElementType element : setName) { /* code */ }` |
+| Description                      | Syntax                                                       |
+|----------------------------------|--------------------------------------------------------------|
+| Import                           | `import java.util.HashSet;`                                  |
+| Declaration                      | `HashSet<ElementType> setName = new HashSet<>();`            |
+| Add Element                      | `setName.add(element);`                                      |
+| Get Size                         | `int size = setName.size();`                                 |
+| Convert Set to List              | `List<ElementType> list = new ArrayList<>(setName);`         |
+| Convert List to Set              | `Set<ElementType> set = new HashSet<>(list);`                |
+| Convert Set to Array             | `ElementType[] array = setName.toArray(new ElementType[0]);` |
+| Add all elements of a Collection | `setName.addAll(collection);`                                |
+| Remove Element                   | `setName.remove(element);`                                   |
+| Check Existence                  | `boolean exists = setName.contains(element);`                |
+| Clear All Elements               | `setName.clear();`                                           |
+| Iterate through Set              | `for (ElementType element : setName) { /* code */ }`         |
 
 # HashMap (Map)
 

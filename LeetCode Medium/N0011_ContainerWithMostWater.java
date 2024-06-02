@@ -5,7 +5,10 @@
  * There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
  * Find two lines that together with the x-axis form a container, such that the container contains the most water.
  * Return the maximum amount of water a container can store.
+ *
+ * Solution: Two Pointer.
  */
+
 public class N0011_ContainerWithMostWater
 {
     public int maxArea(int[] height) 
