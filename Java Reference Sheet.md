@@ -1,6 +1,6 @@
 # Character
 
-| Description                                        | Function                        |
+| Description                                        | Syntax                          |
 |----------------------------------------------------|---------------------------------|
 | Checks if the character is a letter.               | `Character.isLetter(ch)`        |
 | Checks if the character is a digit.                | `Character.isDigit(ch)`         |
@@ -14,30 +14,48 @@
 
 # Strings
 
-| Description                                               | Function                      |
-|-----------------------------------------------------------|-------------------------------|
-| Returns the length of the string.                         | `str.length()`                |
-| Returns the character at the specified index.             | `str.charAt(index)`           |
-| Converts the string to an array of characters.            | `str.toCharArray()`           |
-| Converts an array of characters to a string.              | `String.valueOf(charArray)`   |
-| Checks if the string is empty.                            | `str.isEmpty()`               |
-| Checks if the string contains a sequence of characters.   | `str.contains(sequence)`      |
-| Checks if the string matches a regular expression.        | `str.matches(regex)`          |
-| Removes leading and trailing whitespaces.                 | `str.trim()`                  |
-| Splits the string into an array of substrings.            | `str.split(delimiter)`        |
-| Returns a substring from the specified index.             | `str.substring(beginIndex)`   |
-| Concatenates the specified string to the end.             | `str.concat(otherStr)`        |
-| Compares the content of two strings for equality.         | `str.equals(otherStr)`        |
-| Checks if the string starts with the given prefix.        | `str.startsWith(prefix)`      |
-| Checks if the string ends with the given suffix.          | `str.endsWith(suffix)`        |
-| Returns the index of the first occurrence of a substring. | `str.indexOf(substring)`      |
-| Replaces occurrences of a substring with another.         | `str.replace(oldStr, newStr)` |
-| Converts the string to uppercase.                         | `str.toUpperCase()`           |
-| Converts the string to lowercase.                         | `str.toLowerCase()`           |
+| Description                                               | Syntax                                |
+|-----------------------------------------------------------|---------------------------------------|
+| Returns the length of the string.                         | `str.length()`                        |
+| Returns the character at the specified index.             | `str.charAt(index)`                   |
+| Converts the string to an array of characters.            | `str.toCharArray()`                   |
+| Converts an array of characters to a string.              | `String.valueOf(charArray)`           |
+| Checks if the string is empty.                            | `str.isEmpty()`                       |
+| Checks if the string contains a sequence of characters.   | `str.contains(sequence)`              |
+| Checks if the string matches a regular expression.        | `str.matches(regex)`                  |
+| Removes leading and trailing whitespaces.                 | `str.trim()`                          |
+| Splits the string into an array of substrings.            | `str.split(delimiter)`                |
+| Returns a substring from the specified index.             | `str.substring(beginIndex)`           |
+| Returns a substring from the specified range.             | `str.substring(beginIndex, endIndex)` |
+| Concatenates the specified string to the end.             | `str.concat(otherStr)`                |
+| Compares the content of two strings for equality.         | `str.equals(otherStr)`                |
+| Checks if the string starts with the given prefix.        | `str.startsWith(prefix)`              |
+| Checks if the string ends with the given suffix.          | `str.endsWith(suffix)`                |
+| Returns the index of the first occurrence of a substring. | `str.indexOf(substring)`              |
+| Replaces occurrences of a substring with another.         | `str.replace(oldStr, newStr)`         |
+| Converts the string to uppercase.                         | `str.toUpperCase()`                   |
+| Converts the string to lowercase.                         | `str.toLowerCase()`                   |
+
+# StringBuilder
+
+| Description                                     | Syntax                                                     |
+|-------------------------------------------------|------------------------------------------------------------|
+| Creates a new StringBuilder object.             | `StringBuilder sb = new StringBuilder();`                  |
+| Convert String to StringBuilder                 | `StringBuilder sb = new StringBuilder(str);`               |
+| Convert to String                               | `String str = sb.toString();`                              |
+| Returns the length of the StringBuilder.        | `sb.length()`                                              |
+| Returns substring of StringBuilder              | `sb.substring(start)`                                      |
+| Returns substring of specified range            | `sb.substring(start, end)` <br/> End index is not included |
+| Appends the string representation of an object. | `sb.append(object)`                                        |
+| Inserts the string representation of an object. | `sb.insert(index, object)`                                 |
+| Replaces a substring with another string.       | `sb.replace(start, end, newStr)`                           |
+| Deletes a substring from the StringBuilder.     | `sb.delete(start, end)`                                    |
+| Deletes a character at the specified index.     | `sb.deleteCharAt(index)`                                   |
+| Reverses the characters in the StringBuilder.   | `sb.reverse()`                                             |
 
 # Arrays
 
-| Function                                       | Syntax                                                                                                                 |
+| Description                                    | Syntax                                                                                                                 |
 |------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Import                                         | `import java.util.Arrays;`                                                                                             |
 | Initialization                                 | `datatype[] arrayName = new datatype[size]; `                                                                          |
@@ -51,30 +69,30 @@
 
 # ArrayList (List)
 
-| Function                         | Syntax                                                        |
-|----------------------------------|---------------------------------------------------------------|
-| Import                           | `import java.util.ArrayList;`                                 |
-| Declaration                      | `ArrayList<ElementType> listName = new ArrayList<>()`         |
-| Add Element                      | `listName.add(element);`                                      |
-| Add at Index                     | `listName.add(index, element);`                               |
-| Get Size                         | `int size = listName.size();`                                 |
-| Clear All Elements               | `listName.clear();`                                           |
-| Add all elements of an Array     | `listName.addAll(Arrays.asList(array));`                      |
-| Sort List                        | `Collections.sort(listName);`                                 |
-| Add all elements of a Collection | `listName.addAll(collection);`                                |
-| Deep Copy another List           | `listName = new ArrayList<>(oldList);`                        |
-| Get Element at Index             | `ElementType element = listName.get(index);`                  |
-| Set Element at Index             | `listName.set(index, newElement);`                            |
-| Remove Element at Index          | `listName.remove(index);`                                     |
-| Check Existence                  | `boolean exists = listName.contains(element);`                |
-| Get Index of Element             | `int index = listName.indexOf(element);`                      |
-| Get Last Index of Element        | `int lastIndex = listName.lastIndexOf(element);`              |
-| Is Empty                         | `boolean isEmpty = listName.isEmpty();`                       |
-| Iterate using For-Each Loop      | `for (ElementType element : listName) { /* code */ }`         |
+| Description                      | Syntax                                                |
+|----------------------------------|-------------------------------------------------------|
+| Import                           | `import java.util.ArrayList;`                         |
+| Declaration                      | `ArrayList<ElementType> listName = new ArrayList<>()` |
+| Add Element                      | `listName.add(element);`                              |
+| Add at Index                     | `listName.add(index, element);`                       |
+| Get Size                         | `int size = listName.size();`                         |
+| Clear All Elements               | `listName.clear();`                                   |
+| Add all elements of an Array     | `listName.addAll(Arrays.asList(array));`              |
+| Sort List                        | `Collections.sort(listName);`                         |
+| Add all elements of a Collection | `listName.addAll(collection);`                        |
+| Deep Copy another List           | `listName = new ArrayList<>(oldList);`                |
+| Get Element at Index             | `ElementType element = listName.get(index);`          |
+| Set Element at Index             | `listName.set(index, newElement);`                    |
+| Remove Element at Index          | `listName.remove(index);`                             |
+| Check Existence                  | `boolean exists = listName.contains(element);`        |
+| Get Index of Element             | `int index = listName.indexOf(element);`              |
+| Get Last Index of Element        | `int lastIndex = listName.lastIndexOf(element);`      |
+| Is Empty                         | `boolean isEmpty = listName.isEmpty();`               |
+| Iterate using For-Each Loop      | `for (ElementType element : listName) { /* code */ }` |
 
 # HashSet (Set)
 
-| Function                         | Syntax                                               |
+| Description                      | Syntax                                               |
 |----------------------------------|------------------------------------------------------|
 | Import                           | `import java.util.HashSet;`                          |
 | Declaration                      | `HashSet<ElementType> setName = new HashSet<>();`    |
@@ -88,7 +106,7 @@
 
 # HashMap (Map)
 
-| Function                    | Syntax                                                                                                                                                              |
+| Description                 | Syntax                                                                                                                                                              |
 |-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Import                      | `import java.util.HashMap;`                                                                                                                                         |
 | Declaration                 | `HashMap<KeyType, ValueType> mapName = new HashMap<>();`                                                                                                            |
