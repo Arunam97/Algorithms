@@ -1,3 +1,61 @@
+# Arrays
+
+| Description                                    | Syntax                                                      |
+|------------------------------------------------|-------------------------------------------------------------|
+| Import                                         | `import java.util.Arrays;`                                  |
+| Initialization                                 | `datatype[] arrayName = new datatype[size]; `               |
+| Access Element                                 | `arrayName[index];    `                                     |
+| Assign Element                                 | `arrayName[index] = value;    `                             |
+| Array Length                                   | `arrayName.length;     `                                    |
+| Array to List                                  | `listName.addAll(Arrays.asList(array));`                    |
+| Sort an Array                                  | `Arrays.sort(arrayName);`                                   |
+| Iterating through Array (for-each loop)        | `for (datatype element : arrayName) { /* code */ }`         |
+| Iterating through Array (traditional for loop) | `for (int i = 0; i < arrayName.length; i++) { /* code */ }` |
+
+# ArrayList (List)
+
+| Description                      | Syntax                                                |
+|----------------------------------|-------------------------------------------------------|
+| Import                           | `import java.util.ArrayList;`                         |
+| Declaration                      | `ArrayList<ElementType> listName = new ArrayList<>()` |
+| Add Element                      | `listName.add(element);`                              |
+| Add at Index                     | `listName.add(index, element);`                       |
+| Get Size                         | `int size = listName.size();`                         |
+| Clear All Elements               | `listName.clear();`                                   |
+| Add all elements of an Array     | `listName.addAll(Arrays.asList(array));`              |
+| Convert ArrayList to Array       | `Object[] stringArray = stringList.toArray();`        |
+| Sort List                        | `Collections.sort(listName);`                         |
+| Add all elements of a Collection | `listName.addAll(collection);`                        |
+| Deep Copy another List           | `listName = new ArrayList<>(oldList);`                |
+| Get Element at Index             | `ElementType element = listName.get(index);`          |
+| Set Element at Index             | `listName.set(index, newElement);`                    |
+| Remove Element at Index          | `listName.remove(index);`                             |
+| Check Existence                  | `boolean exists = listName.contains(element);`        |
+| Get Index of Element             | `int index = listName.indexOf(element);`              |
+| Get Last Index of Element        | `int lastIndex = listName.lastIndexOf(element);`      |
+| Is Empty                         | `boolean isEmpty = listName.isEmpty();`               |
+| Iterate using For-Each Loop      | `for (ElementType element : listName) { /* code */ }` |
+
+# HashMap (Map)
+
+| Description                 | Syntax                                                                                                                                                              |
+|-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Import                      | `import java.util.HashMap;`                                                                                                                                         |
+| Declaration                 | `HashMap<KeyType, ValueType> mapName = new HashMap<>();`                                                                                                            |
+| Put Key-Value Pair          | `mapName.put(key, value);`                                                                                                                                          |
+| Get Value by Key            | `ValueType value = mapName.get(key);`                                                                                                                               |
+| Get Size                    | `int size = mapName.size();`                                                                                                                                        |
+| Get Value or return default | `mapName.getOrDefault(key, defaultValue);`                                                                                                                          |
+| Remove Key-Value Pair       | `mapName.remove(key);`                                                                                                                                              |
+| Clear All Key-Value Pairs   | `mapName.clear();`                                                                                                                                                  |
+| Check Key Existence         | `boolean exists = mapName.containsKey(key);`                                                                                                                        |
+| Check Value Existence       | `boolean exists = mapName.containsValue(value);`                                                                                                                    |
+| Is Empty                    | `boolean isEmpty = mapName.isEmpty();`                                                                                                                              |
+| Iterate through Keys        | `for (KeyType key : mapName.keySet()) { /* code */ }`                                                                                                               |
+| Iterate through Values      | `for (ValueType value : mapName.values()) { /* code */ }`                                                                                                           |
+| Iterate through Entries     | `for (Map.Entry<KeyType, ValueType> entry : mapName.entrySet()) {` <br/> `System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue()); `<br/> `}` |
+| Replace Value               | `mapName.replace(key, newValue);`                                                                                                                                   |
+
 # Character
 
 | Description                                        | Syntax                          |
@@ -36,60 +94,6 @@
 | Converts the string to uppercase.                         | `str.toUpperCase()`                   |
 | Converts the string to lowercase.                         | `str.toLowerCase()`                   |
 
-# StringBuilder
-
-| Description                                     | Syntax                                                     |
-|-------------------------------------------------|------------------------------------------------------------|
-| Creates a new StringBuilder object.             | `StringBuilder sb = new StringBuilder();`                  |
-| Convert String to StringBuilder                 | `StringBuilder sb = new StringBuilder(str);`               |
-| Convert to String                               | `String str = sb.toString();`                              |
-| Returns the length of the StringBuilder.        | `sb.length()`                                              |
-| Returns substring of StringBuilder              | `sb.substring(start)`                                      |
-| Returns substring of specified range            | `sb.substring(start, end)` <br/> End index is not included |
-| Appends the string representation of an object. | `sb.append(object)`                                        |
-| Inserts the string representation of an object. | `sb.insert(index, object)`                                 |
-| Replaces a substring with another string.       | `sb.replace(start, end, newStr)`                           |
-| Deletes a substring from the StringBuilder.     | `sb.delete(start, end)`                                    |
-| Deletes a character at the specified index.     | `sb.deleteCharAt(index)`                                   |
-| Reverses the characters in the StringBuilder.   | `sb.reverse()`                                             |
-
-# Arrays
-
-| Description                                    | Syntax                                                                                                                 |
-|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Import                                         | `import java.util.Arrays;`                                                                                             |
-| Initialization                                 | `datatype[] arrayName = new datatype[size]; `                                                                          |
-| Access Element                                 | `arrayName[index];    `                                                                                                |
-| Assign Element                                 | `arrayName[index] = value;    `                                                                                        |
-| Array Length                                   | `arrayName.length;     `                                                                                               |
-| Array to List                                  | `List<WrapperClass> list = Arrays.asList(array);`<br/>(Array type must also be of a Wrapper class, not primitive type) |
-| Sort an Array                                  | `Arrays.sort(arrayName);`                                                                                              |
-| Iterating through Array (for-each loop)        | `for (datatype element : arrayName) { /* code */ }`                                                                    |
-| Iterating through Array (traditional for loop) | `for (int i = 0; i < arrayName.length; i++) { /* code */ }`                                                            |
-
-# ArrayList (List)
-
-| Description                      | Syntax                                                |
-|----------------------------------|-------------------------------------------------------|
-| Import                           | `import java.util.ArrayList;`                         |
-| Declaration                      | `ArrayList<ElementType> listName = new ArrayList<>()` |
-| Add Element                      | `listName.add(element);`                              |
-| Add at Index                     | `listName.add(index, element);`                       |
-| Get Size                         | `int size = listName.size();`                         |
-| Clear All Elements               | `listName.clear();`                                   |
-| Add all elements of an Array     | `listName.addAll(Arrays.asList(array));`              |
-| Sort List                        | `Collections.sort(listName);`                         |
-| Add all elements of a Collection | `listName.addAll(collection);`                        |
-| Deep Copy another List           | `listName = new ArrayList<>(oldList);`                |
-| Get Element at Index             | `ElementType element = listName.get(index);`          |
-| Set Element at Index             | `listName.set(index, newElement);`                    |
-| Remove Element at Index          | `listName.remove(index);`                             |
-| Check Existence                  | `boolean exists = listName.contains(element);`        |
-| Get Index of Element             | `int index = listName.indexOf(element);`              |
-| Get Last Index of Element        | `int lastIndex = listName.lastIndexOf(element);`      |
-| Is Empty                         | `boolean isEmpty = listName.isEmpty();`               |
-| Iterate using For-Each Loop      | `for (ElementType element : listName) { /* code */ }` |
-
 # HashSet (Set)
 
 | Description                      | Syntax                                                       |
@@ -107,22 +111,19 @@
 | Clear All Elements               | `setName.clear();`                                           |
 | Iterate through Set              | `for (ElementType element : setName) { /* code */ }`         |
 
-# HashMap (Map)
+# StringBuilder
 
-| Description                 | Syntax                                                                                                                                                              |
-|-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Import                      | `import java.util.HashMap;`                                                                                                                                         |
-| Declaration                 | `HashMap<KeyType, ValueType> mapName = new HashMap<>();`                                                                                                            |
-| Put Key-Value Pair          | `mapName.put(key, value);`                                                                                                                                          |
-| Get Value by Key            | `ValueType value = mapName.get(key);`                                                                                                                               |
-| Get Size                    | `int size = mapName.size();`                                                                                                                                        |
-| Get Value or return default | `mapName.getOrDefault(key, defaultValue);`                                                                                                                          |
-| Remove Key-Value Pair       | `mapName.remove(key);`                                                                                                                                              |
-| Clear All Key-Value Pairs   | `mapName.clear();`                                                                                                                                                  |
-| Check Key Existence         | `boolean exists = mapName.containsKey(key);`                                                                                                                        |
-| Check Value Existence       | `boolean exists = mapName.containsValue(value);`                                                                                                                    |
-| Is Empty                    | `boolean isEmpty = mapName.isEmpty();`                                                                                                                              |
-| Iterate through Keys        | `for (KeyType key : mapName.keySet()) { /* code */ }`                                                                                                               |
-| Iterate through Values      | `for (ValueType value : mapName.values()) { /* code */ }`                                                                                                           |
-| Iterate through Entries     | `for (Map.Entry<KeyType, ValueType> entry : mapName.entrySet()) {` <br/> `System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue()); `<br/> `}` |
-| Replace Value               | `mapName.replace(key, newValue);`                                                                                                                                   |
+| Description                                     | Syntax                                                     |
+|-------------------------------------------------|------------------------------------------------------------|
+| Creates a new StringBuilder object.             | `StringBuilder sb = new StringBuilder();`                  |
+| Convert String to StringBuilder                 | `StringBuilder sb = new StringBuilder(str);`               |
+| Convert to String                               | `String str = sb.toString();`                              |
+| Returns the length of the StringBuilder.        | `sb.length()`                                              |
+| Returns substring of StringBuilder              | `sb.substring(start)`                                      |
+| Returns substring of specified range            | `sb.substring(start, end)` <br/> End index is not included |
+| Appends the string representation of an object. | `sb.append(object)`                                        |
+| Inserts the string representation of an object. | `sb.insert(index, object)`                                 |
+| Replaces a substring with another string.       | `sb.replace(start, end, newStr)`                           |
+| Deletes a substring from the StringBuilder.     | `sb.delete(start, end)`                                    |
+| Deletes a character at the specified index.     | `sb.deleteCharAt(index)`                                   |
+| Reverses the characters in the StringBuilder.   | `sb.reverse()`                                             |
